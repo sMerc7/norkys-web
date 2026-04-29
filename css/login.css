@@ -1,16 +1,29 @@
+/* ============================
+   VARIABLES GLOBALES
+   Define colores principales
+   ============================ */
 :root {
-  --norkys-red: #da291c;
-  --norkys-red-dark: #b52015;
-  --norkys-yellow: #ffc72c;
-  --norkys-green-bright: #00c853; /* Verde para botón Iniciar Sesión */
-  --bg-main: #f8f9fa;
-  --bg-card: #ffffff;
-  --border-color: #e9ecef;
-  --text-main: #212121;
-  --text-muted: #6c757d;
+  --norkys-red: #da291c; /* Rojo principal */
+  --norkys-red-dark: #b52015; /* Rojo oscuro para degradados */
+  --norkys-yellow: #ffc72c; /* Amarillo distintivo */
+  --norkys-green-bright: #00c853; /* Verde para botón principal */
+  --bg-main: #f8f9fa; /* Fondo general */
+  --bg-card: #ffffff; /* Fondo de tarjetas */
+  --border-color: #e9ecef; /* Bordes suaves */
+  --text-main: #212121; /* Texto principal */
+  --text-muted: #6c757d; /* Texto secundario */
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+/* ============================
+   RESET GENERAL
+   Elimina márgenes y paddings
+   ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
 
 .login-body, .auth-body { background-color: var(--bg-main); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; color: var(--text-main); }
 .login-wrapper, .auth-wrapper { width: 100%; max-width: 1000px; }
